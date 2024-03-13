@@ -1,0 +1,46 @@
+version: '2'
+
+services:
+  node1:
+    image: fluent/fluent-bit:2.2.2
+    ports:
+      # HTTP server communication
+      - ':8090'
+      # Inject alerts via HTTP
+      - ':8095'
+    volumes:
+      - ./fluent-bit-config:/fluent-bit/etc/
+    tmpfs: /logs
+    # This file is excluded from git
+    env_file: .env
+    environment:
+      FB_CONFIG_DIR: /fluent-bit/etc/
+      LOG_DIR: /logs/
+      CHAT_OPS_SVR: http-slack-server
+      CHAT_OPS_PORT: '8080'
+
+  node2:
+    image: fluent/fluent-bit:2.2.2
+    ports:
+      # HTTP server communication
+      - ':8090'
+      # Inject alerts via HTTP
+      - ':8095'
+    volumes:
+      - ./fluent-bit-config:/fluent-bit/etc/
+    tmpfs: /logs
+    # This file is excluded from git
+    env_file: .env
+    environment:
+      FB_CONFIG_DIR: /fluent-bit/etc/
+      LOG_DIR: /logs/
+      CHAT_OPS_SVR: http-slack-server
+      CHAT_OPS_PORT: '8080'
+
+  http-slack-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - ':8080'
+    env_file: .env

@@ -1,0 +1,1 @@
+curl -X POST -d {\"help\":\"FATAL-this-is-a-synthetic-alert\"} -H "content-type: application/json" %SOCIAL_NODE_ADDR%:%SYNTH_ALERT_PORT%
