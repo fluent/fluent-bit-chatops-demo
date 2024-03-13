@@ -1,5 +1,7 @@
 # Introduction
 
+The demo for [Cloud Native Rejects Paris 2024 talk](https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-eu-paris-2024/talk/review/PP8T37LPQUSTTRWBXVCHFJSSKDM9B98J).
+
 This contains all the resources to build a demo-able ChatOps solution using Slack and Fluent Bit.
 
 - all the details are in the [docs](./docs/readme.md) and the specific build docs are in [docs/buildme.md](./docs/buildme.md)
