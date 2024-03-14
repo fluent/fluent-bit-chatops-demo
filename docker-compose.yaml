@@ -22,6 +22,7 @@ services:
 
   http-slack-server:
     build:
+      # image: ghcr.io/fluent/fluent-bit-chatops-demo
       context: .
       dockerfile: Dockerfile
     ports:
