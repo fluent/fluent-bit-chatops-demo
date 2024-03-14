@@ -2,6 +2,8 @@ name: Build slack server container
 on:
     workflow_dispatch:
     push:
+        branches:
+          - main
         paths-ignore:
             - 'scripts/**'
             - 'docs/**'
