@@ -2,7 +2,7 @@ version: '2'
 
 services:
   node1:
-    image: fluent/fluent-bit:2.2.2-debug
+    image: ghcr.io/calyptia/core/calyptia-fluent-bit:24.2.3 # OR fluent/fluent-bit:2.2.2-debug
     ports:
       # HTTP server communication
       - ':8090'
