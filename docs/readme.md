@@ -33,13 +33,13 @@ The solution operates in the following manner:
 Fluent Bit has two paths to handle:
 
 1. Handling of normal events and identifying which event(s) may need to be shared via Slack for human intervention
-2. Handling of the human action coming from Slack to execute a remediation operation. This comes as an HTTP event (*an enhancement to make things secure with SSL should be made available*)
+1. Handling of the human action coming from Slack to execute a remediation operation. This comes as an HTTP event (*an enhancement to make things secure with SSL should be made available*)
 
 The Fluent Bit resources for this all reside within the folder **../fluentbit**.
 
 The Fluent Bit configuration currently makes use of the classic syntax and has the Lua scripting deployed alongside it.
 
-A test script that will mimic the Slack handler call is provided, which makes use of CURL - called **test-cmd.[bat|sh]**
+A test script that will mimic the Slack handler call is provided, which makes use of CURL - called `**test-cmd.[bat|sh]**`.
 
 ### Java/GraalVM Response Handler (aka Social Agent)
 
