@@ -49,13 +49,14 @@ function cb_osCommand(tag, timestamp, record)
     if (getOS() == "Windows") then
       command = "call cmd_" .. command .. ".bat"
     else
-      command = "source cmd_" .. command .. ".sh"
+      command = os.getenv("FB_CONFIG_DIR") .. "cmd_" .. command .. ".sh"
     end
   else
     print("Lua no command identified")
   end
 
-  local fullCommand = command .. " > remotecmd.lua.out"
+  local fullCommand = command
+  print("running: " .. fullCommand)
   local runCommandResult = os.execute(fullCommand)
   print("response from exe command:" .. runCommandResult)
   return code, timestamp, record
