@@ -152,7 +152,9 @@ For more information on available configuration options, see the *helidon-maven-
 
 ## Slack Test Scripts
 
-To verify that Slack has got the correct configurations, there are a couple of test scripts (both .bat and .sh versions). To use these scripts you do need to use CURL and set the environment variables from the set-env,[bat|sh]  These scripts are:
+To verify that Slack has got the correct configurations, there are a couple of test scripts (both .bat and .sh versions). 
+To use these scripts you do need to use CURL and set the environment variables from the `set-env,[bat|sh]`.
+These scripts are:
 
 | Script Name                       | Purpose                                                      |
 | --------------------------------- | ------------------------------------------------------------ |
