@@ -27,3 +27,5 @@ replay_pid*
 .env
 # Ignore output logs
 *.lua.out
+
+.DS_Store
