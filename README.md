@@ -1,5 +1,7 @@
 # Introduction
 
+This repository was used as the basis for two talks at Cloud Native Rejects Paris 2024 and Opensource Monitoring Conference 2024.
+
 The demo for [Cloud Native Rejects Paris 2024 talk](https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-eu-paris-2024/talk/review/PP8T37LPQUSTTRWBXVCHFJSSKDM9B98J).
 
 The [actual presentation is available in this repo](./docs/Fluent_Bit_for_ChatOps-Cloud_Native_Rejekts_EU_2024.pdf).

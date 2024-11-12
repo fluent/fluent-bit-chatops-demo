@@ -1,8 +1,9 @@
-version: '2'
-
 services:
   node1:
-    image: ghcr.io/calyptia/core/calyptia-fluent-bit:24.2.3 # OR fluent/fluent-bit:2.2.2-debug
+    # Using Chronosphere LTS image
+    image: ghcr.io/calyptia/core/calyptia-fluent-bit:24.11.1
+    # OR any image with a shell, e.g.
+    # image: fluent/fluent-bit:3.1.10-debug
     ports:
       # HTTP server communication
       - ':8090'
@@ -22,6 +23,7 @@ services:
 
   http-slack-server:
     build:
+      # A pre-built image is pushed automatically by the repo
       # image: ghcr.io/fluent/fluent-bit-chatops-demo
       context: .
       dockerfile: Dockerfile
