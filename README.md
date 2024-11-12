@@ -1,6 +1,6 @@
 # Introduction
 
-This repository was used as the basis for two talks at [Cloud Native Rejects Paris 2024](https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-eu-paris-2024/talk/LXXPWR/) and [Open Source Monitoring Conference 2024](osmc.de).
+This repository was used as the basis for two talks at [Cloud Native Rejects Paris 2024](https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-eu-paris-2024/talk/LXXPWR/) and [Open Source Monitoring Conference 2024](https://osmc.de/talks/fluent-bit-the-engine-to-power-chat-ops/).
 
 The demo for [Cloud Native Rejects Paris 2024 talk](https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-eu-paris-2024/talk/review/PP8T37LPQUSTTRWBXVCHFJSSKDM9B98J).
 
