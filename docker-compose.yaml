@@ -22,9 +22,10 @@ services:
     working_dir: /fluent-bit/etc/
 
   http-slack-server:
+    # A pre-built image is pushed automatically by the repo
+    image: ghcr.io/fluent/fluent-bit-chatops-demo
+    # Otherwise build locally
     build:
-      # A pre-built image is pushed automatically by the repo
-      # image: ghcr.io/fluent/fluent-bit-chatops-demo
       context: .
       dockerfile: Dockerfile
     ports:
